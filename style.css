@@ -152,6 +152,7 @@ div.card-flex {
 div.be-hero {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 div.be-hero img {
@@ -177,6 +178,7 @@ section.download {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background: linear-gradient(#fff 30%, rgba(88, 180, 174, 0.3) 30%);
 }
 
@@ -213,4 +215,10 @@ footer {
 footer a {
   text-transform: none;
   margin: 0 15px 10px;
+}
+
+@media (max-width: 1138px) {
+  body {
+    width: auto;
+  }
 }
