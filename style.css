@@ -1,0 +1,212 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 30px auto 0 auto;
+  font-size: 10px;
+}
+
+a {
+  color: #333333;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a:hover {
+  color: #58b4ae;
+}
+
+h1 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333333;
+}
+
+h2 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.35;
+  color: #333333;
+}
+
+img.logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 13px;
+}
+
+/*----HEADER---*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+}
+
+nav {
+  border-top: 2px solid #ffb367;
+  padding-top: 8px;
+}
+
+nav a {
+  margin: 0 25px;
+}
+
+section {
+  padding: 70px;
+  height: 100vh;
+  box-sizing: border-box;
+  min-height: fit-content;
+  scroll-snap-align: start;
+}
+
+section:first-of-type {
+  height: 71vh;
+  scroll-snap-align: end;
+}
+
+section:last-of-type {
+  height: 95vh;
+}
+
+/*----ABOVE THE FOLD SECTION---*/
+section.welcome {
+  max-width: 1138px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(ryder.png);
+  background-size: 66% auto;
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.welcome h2 {
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+section.welcome svg {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  z-index: -1;
+  width: 35%;
+  height: auto;
+}
+
+/*----CARD SECTION---*/
+section.orange {
+  background: rgba(248, 207, 97, 0.3);
+}
+
+div.prodotti-container {
+  max-width: 1138px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.card {
+  padding: 20px 10px 5px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 10px;
+  min-width: 215px;
+  min-height: 190px;
+}
+
+div.card img {
+  display: block;
+  margin: 10px auto 0;
+  max-height: 80px;
+}
+div.card h2 {
+  text-align: center;
+}
+
+div.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/*----BE HERO SECTION---*/
+div.be-hero {
+  display: flex;
+  justify-content: center;
+}
+
+div.be-hero img {
+  max-height: 238px;
+  max-height: auto;
+}
+
+div.be-hero-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 50px;
+}
+
+div.be-hero-element h2 {
+  text-align: center;
+  max-width: 451px;
+  margin-top: 4rem;
+}
+
+/*----DOWNLOAD SECTION---*/
+section.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#fff 30%, rgba(88, 180, 174, 0.3) 30%);
+}
+
+section.download img.phone {
+  height: 615px;
+  width: auto;
+}
+
+section.download div.calltoaction {
+  padding: 100px;
+}
+
+section.download h1 {
+  text-align: left;
+}
+
+img.download-button {
+  height: 70px;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----FOOTER---*/
+footer {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  background: rgba(88, 180, 174, 0.3);
+}
+
+footer a {
+  text-transform: none;
+  margin: 0 15px 10px;
+}
