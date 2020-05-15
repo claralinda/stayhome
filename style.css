@@ -32,7 +32,7 @@ h1 {
 h2 {
   font-family: Quicksand, sans-serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.35;
   color: #333333;
 }
@@ -106,7 +106,7 @@ section.welcome svg {
   z-index: -1;
   width: 140%;
   height: auto;
-  transform: translate(-15%, -50%);
+  transform: translate(-17%, -55%);
 }
 
 /*----CARD SECTION---*/
@@ -151,7 +151,7 @@ div.card-flex {
 /*----BE HERO SECTION---*/
 div.be-hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -164,12 +164,12 @@ div.be-hero-element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 50px;
+  margin: 70px 10px;
 }
 
 div.be-hero-element h2 {
   text-align: center;
-  max-width: 451px;
+  max-width: 400px;
   margin-top: 4rem;
 }
 
@@ -217,8 +217,101 @@ footer a {
   margin: 0 15px 10px;
 }
 
-@media (max-width: 1138px) {
+@media (max-width: 1200px) {
   body {
     width: auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  section.welcome svg {
+    transform: translate(-17%, -60%);
+  }
+
+  div.card img {
+    max-height: 60px;
+  }
+
+  div.card {
+    padding: 20px 10px 5px;
+    min-width: 170px;
+    min-height: 150px;
+    margin: 5px;
+  }
+
+  div.be-hero img {
+    max-height: 180px;
+    max-width: auto;
+  }
+
+  div.be-hero-element h2 {
+    max-width: 280px;
+  }
+
+  section.download div.calltoaction {
+    padding: 50px 10px 50px 50px;
+  }
+
+  img.download-button {
+    height: 55px;
+  }
+  section.download img.phone {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  section {
+    padding: 25px;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  section.welcome h2 {
+    text-align: center;
+    margin: 10px;
+  }
+
+  div.card img {
+    max-height: 40px;
+  }
+
+  div.card {
+    padding: 20px 10px 5px;
+    min-width: 150px;
+    min-height: 133px;
+    margin: 5px;
+  }
+  div.be-hero-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 10px;
+  }
+
+  div.be-hero-element h2 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  img.download-button {
+    height: 45px;
   }
 }
