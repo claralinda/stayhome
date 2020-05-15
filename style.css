@@ -289,6 +289,10 @@ footer a {
     margin: 10px;
   }
 
+  section.welcome {
+    background-size: 75% auto;
+  }
+
   div.card img {
     max-height: 40px;
   }
@@ -311,7 +315,24 @@ footer a {
     margin-top: 2rem;
   }
 
+  section.download img.phone {
+    height: 450px;
+    width: auto;
+  }
+
   img.download-button {
     height: 45px;
+  }
+}
+
+@media (max-width: 4000px) {
+  h1 {
+    font-size: 20px;
+  }
+  section.welcome {
+    background-size: 80% auto;
+  }
+  footer a {
+    font-size: 10px;
   }
 }
