@@ -9,7 +9,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Stay Home</title>
-    <script src="https://cdn.tagcommander.com/5706/tc_Test_Clara_20.js?t="+Math.floor(Math.random() * 100000)></script>
+    <script type="text/javascript">
+      var cachebuster = Math.floor(Math.random() * 100000);
+      document.write('<scr'+'ipt type="text/javascript" src="https://cdn.tagcommander.com/5706/tc_Test_Clara_20.js?t=' +cachebuster+'"></scr' + 'ipt>');
+    </script>
   </head>
   <body>
 
